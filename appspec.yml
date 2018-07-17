@@ -9,9 +9,6 @@ permissions:
      owner: ec2-user
      mode: 755
 hooks:
-   BeforeInstall:
-    - location: scripts/killapp.sh
-      runas: ec2-user
    AfterInstall:
     - location: scripts/startapp.sh
       runas: ec2-user
